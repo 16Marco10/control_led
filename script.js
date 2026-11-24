@@ -6,11 +6,15 @@ const estado = document.getElementById("estado");
 
 const btnAzulOn = document.getElementById("btnAzulOn");
 const btnAzulOff = document.getElementById("btnAzulOff");
+
 const btnRojoOn = document.getElementById("btnRojoOn");
 const btnRojoOff = document.getElementById("btnRojoOff");
 
 const btnTodosOn = document.getElementById("btnTodosOn");
 const btnTodosOff = document.getElementById("btnTodosOff");
+
+const btnParpadear = document.getElementById("btnParpadear");
+const btnDetener = document.getElementById("btnDetener");
 
 btnConectar.addEventListener("click", async () => {
     try {
@@ -28,6 +32,8 @@ btnConectar.addEventListener("click", async () => {
         btnRojoOff.disabled = false;
         btnTodosOn.disabled = false;
         btnTodosOff.disabled = false;
+        btnParpadear.disabled = false;
+        btnDetener.disabled = false;
 
     } catch (error) {
         estado.textContent = "Error al conectar";
@@ -40,14 +46,18 @@ async function enviarOrden(orden) {
     await escritor.write(datos);
 }
 
-// Control del LED azul
+// LED azul
 btnAzulOn.addEventListener("click", () => enviarOrden("AZUL_ON"));
 btnAzulOff.addEventListener("click", () => enviarOrden("AZUL_OFF"));
 
-// Control del LED rojo
+// LED rojo
 btnRojoOn.addEventListener("click", () => enviarOrden("ROJO_ON"));
 btnRojoOff.addEventListener("click", () => enviarOrden("ROJO_OFF"));
 
-// Control de los dos LEDs
+// Control general
 btnTodosOn.addEventListener("click", () => enviarOrden("ON"));
 btnTodosOff.addEventListener("click", () => enviarOrden("OFF"));
+
+// Parpadeo
+btnParpadear.addEventListener("click", () => enviarOrden("PARPADEAR"));
+btnDetener.addEventListener("click", () => enviarOrden("DETENER"));

@@ -19,7 +19,7 @@ h2 {
     margin-top: 35px;
 }
 
-/* Todos los botones */
+/* Botones generales */
 button {
     padding: 12px 22px;
     margin: 8px;
@@ -48,6 +48,15 @@ button:hover:not(:disabled) {
 
 #btnTodosOff {
     background-color: #555;
+}
+
+/* Parpadeo */
+#btnParpadear {
+    background-color: #ff9800;
+}
+
+#btnDetener {
+    background-color: #6c757d;
 }
 
 /* LED azul */
