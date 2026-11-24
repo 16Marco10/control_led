@@ -1,4 +1,4 @@
-/* Diseño general de la página */
+/* Diseño general */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f2f5;
@@ -19,7 +19,7 @@ h2 {
     margin-top: 35px;
 }
 
-/* Botones */
+/* Todos los botones */
 button {
     padding: 12px 22px;
     margin: 8px;
@@ -28,15 +28,29 @@ button {
     font-size: 16px;
     cursor: pointer;
     color: white;
-    background-color: #333;
+    transition: 0.2s;
 }
 
-/* Botón de conexión */
+/* Efecto al pasar el ratón */
+button:hover:not(:disabled) {
+    opacity: 0.8;
+}
+
+/* Conectar Arduino */
 #btnConectar {
     background-color: #007bff;
 }
 
-/* Botones del LED azul */
+/* Control general */
+#btnTodosOn {
+    background-color: #28a745;
+}
+
+#btnTodosOff {
+    background-color: #555;
+}
+
+/* LED azul */
 #btnAzulOn {
     background-color: #007bff;
 }
@@ -45,7 +59,7 @@ button {
     background-color: #555;
 }
 
-/* Botones del LED rojo */
+/* LED rojo */
 #btnRojoOn {
     background-color: #dc3545;
 }
