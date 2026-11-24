@@ -1,43 +1,26 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!-- Configuración básica de la página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Título de la pestaña del navegador -->
-    <title>Control LED Arduino</title>
-
-    <!-- Enlazamos la hoja de estilos CSS -->
+    <title>Control de LEDs</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 
-    <!-- Contenedor principal de la aplicación -->
-    <div class="contenedor">
+    <h1>Control de LEDs Arduino</h1>
 
-        <h1>Control LED Arduino</h1>
+    <button id="btnConectar">Conectar Arduino</button>
+    <p id="estado">Arduino desconectado</p>
 
-        <p>Controla tu LED mediante Arduino y USB</p>
+    <h2>LED azul</h2>
+    <button id="btnAzulOn" disabled>Encender azul</button>
+    <button id="btnAzulOff" disabled>Apagar azul</button>
 
-        <!-- Botón para conectar con la placa Arduino -->
-        <button id="btnConectar">Conectar con Arduino</button>
+    <h2>LED rojo</h2>
+    <button id="btnRojoOn" disabled>Encender rojo</button>
+    <button id="btnRojoOff" disabled>Apagar rojo</button>
 
-        <!-- Indicador del estado de conexión -->
-        <p id="estado">Arduino desconectado</p>
-
-        <!-- Botón para encender el LED -->
-        <button id="btnEncender" disabled>ENCENDER</button>
-
-        <!-- Botón para apagar el LED -->
-        <button id="btnApagar" disabled>APAGAR</button>
-
-    </div>
-
-    <!-- Cargamos el archivo JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
