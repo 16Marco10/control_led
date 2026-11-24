@@ -1,0 +1,83 @@
+
+/* Estilos generales de toda la página */
+body {
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    background-color: #eef2f7; /* Color de fondo */
+    margin: 0; /* Eliminamos el margen exterior */
+    display: flex; /* Utilizamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    min-height: 100vh; /* Ocupamos toda la altura de la pantalla */
+}
+
+/* Contenedor principal de la aplicación */
+.contenedor {
+    background-color: white; /* Fondo blanco */
+    padding: 40px; /* Espacio interior */
+    border-radius: 15px; /* Bordes redondeados */
+    text-align: center; /* Centramos el texto */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra */
+    width: 350px; /* Ancho del contenedor */
+}
+
+/* Estilo del título principal */
+h1 {
+    color: #2563eb; /* Color azul */
+    margin-bottom: 10px; /* Separación inferior */
+}
+
+/* Estilo de los párrafos */
+p {
+    color: #555; /* Color gris del texto */
+    margin-bottom: 20px; /* Separación inferior */
+}
+
+/* Estilo general de los botones */
+button {
+    border: none; /* Eliminamos el borde */
+    padding: 12px 20px; /* Espacio interior */
+    margin: 8px; /* Separación entre botones */
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 15px; /* Tamaño de letra */
+    cursor: pointer; /* Cambia el cursor al pasar encima */
+    transition: 0.3s; /* Transición suave */
+}
+
+/* Botón de conexión */
+#btnConectar {
+    background-color: #2563eb; /* Fondo azul */
+    color: white; /* Texto blanco */
+}
+
+/* Efecto al pasar el ratón por el botón de conexión */
+#btnConectar:hover {
+    background-color: #1d4ed8; /* Azul más oscuro */
+}
+
+/* Botón para encender el LED */
+#btnEncender {
+    background-color: #22c55e; /* Fondo verde */
+    color: white; /* Texto blanco */
+}
+
+/* Efecto al pasar el ratón por encender */
+#btnEncender:hover {
+    background-color: #16a34a; /* Verde más oscuro */
+}
+
+/* Botón para apagar el LED */
+#btnApagar {
+    background-color: #ef4444; /* Fondo rojo */
+    color: white; /* Texto blanco */
+}
+
+/* Efecto al pasar el ratón por apagar */
+#btnApagar:hover {
+    background-color: #dc2626; /* Rojo más oscuro */
+}
+
+/* Aspecto de los botones deshabilitados */
+button:disabled {
+    opacity: 0.5; /* Reducimos la opacidad */
+    cursor: not-allowed; /* Indicamos que no se pueden pulsar */
+}
